@@ -1,7 +1,8 @@
 #include <iostream>
-#include "inout.h"
+// #include "inout.h"
 using namespace std;
 
+//inserstion sort algo
 void insertionSort(int a[], int N)
 {
     for (int i = 1; i < N; i++)
@@ -16,6 +17,7 @@ void insertionSort(int a[], int N)
     }
 }
 
+//binary Search algo
 void binarySearch(int a[], int N, int x)
 {
     int low = 0;
@@ -43,7 +45,7 @@ void binarySearch(int a[], int N, int x)
 
 int main()
 {
-    io();
+    // io();
     int size;
     cout << "Enter the size of the array" << endl;
     cin >> size;
