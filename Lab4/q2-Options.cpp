@@ -75,7 +75,7 @@ void binarySrc(int array[],int high) {
   cin>>key;
   int low = 0;
   bool found=false;
-  while (low <= high-1) {
+  while (low <= high) {
     int mid = (low + high) / 2;
     if (array[mid] == key) {
       cout << "Found at " << mid << endl;
@@ -106,6 +106,7 @@ int main() {
     cout << "Enter which sort you want to use -> "<<endl;;
     cout << "1.Insertion sort"<<endl;
     cout << "2.Marge Sort"<<endl;
+    cout << "3.Binary Search"<<endl;
     cout << "0.exit";
     cin >> choise;
     switch (choise) {
