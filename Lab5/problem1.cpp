@@ -1,5 +1,5 @@
 #include <iostream>
-#define box 10 
+#define box 10 //size of the coin box
 using namespace std;
 int main(){
 
