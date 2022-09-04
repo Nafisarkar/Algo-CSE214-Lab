@@ -1,7 +1,5 @@
-#include <functional>
 #include <iostream>
 #include <algorithm>
-#include <iterator>
 using namespace std;
 
 int main(){
@@ -15,9 +13,12 @@ int main(){
 
     int beg = 10;
     
-    for (int i = 0; i < 5; i++){
-        cout<<sorted_value[i]<<endl;
+    cout<<" [sorted_value]"<<endl;
+    cout<<" ";
+    for (int i = 0; i < sizeof(sorted_value)/sizeof(int); i++){
+        cout<<sorted_value[i]<<" ";
     }
+    cout<<endl;
     
 
     int w=0;
@@ -30,10 +31,10 @@ int main(){
         int stored = 0;
         for(int j = 0; j < sizeof(value)/sizeof(value[0]); j++){
             if(value[j] == highest_order){
-                cout<<"[metch] "<<value[j]<<" <-> " <<highest_order<<endl;
+                cout<<" [metch] "<<value[j]<<" and " <<highest_order<<endl;
                 index = j;
                 stored = weight[j];
-                cout<<"[stored] "<<stored<<" [Index] "<<index<<endl;
+                cout<<" [stored] "<<stored<<" [Index] "<<index<<endl;
 
                 break;
             }
@@ -43,7 +44,7 @@ int main(){
             w++;
             price += highest_order;
             stored --;
-            cout<<"[while->] "<<w<<" and " <<price<<endl;
+            cout<<" [while->] "<<w<<" and " <<price<<endl;
             if(stored ==0){
                 break;
             }
